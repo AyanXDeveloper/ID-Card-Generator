@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- FORM -->
+        <div class="form-wrapper">
+            <h1>Student Registration</h1>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="Enter full name">
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter email">
+            </div>
+
+            <div class="input-group">
+                <label>Course</label>
+                <input type="text" id="courseName" placeholder="Enter course name">
+            </div>
+
+            <div class="input-group">
+                <label>Roll Number</label>
+                <input type="number" id="rollNum" placeholder="Enter roll number">
+            </div>
+
+            <div class="input-group">
+                <label>Batch</label>
+                <input type="number" id="batch" placeholder="Enter batch year">
+            </div>
+
+            <div class="input-group">
+                <label>Upload Photo</label>
+                <input type="file" id="profile" accept="image/*">
+            </div>
+
+            <button class="btn-generate" onclick="generateCard()">Generate ID Card</button>
+        </div>
+
+
+        <!-- CARD PREVIEW -->
+        <div class="card-preview" id="cardPreview">
+            <p class="placeholder">Generated Card Will Appear Here</p>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
